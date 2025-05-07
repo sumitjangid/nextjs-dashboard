@@ -14,10 +14,14 @@ const iconMap = {
 };
 
 export default async function CardWrapper() {
+  // Example hardcoded values
+  const totalPaidInvoices = 10;
+  const totalPendingInvoices = 5;
+  const numberOfInvoices = 15;
+  const numberOfCustomers = 7;
+
   return (
     <>
-      {/* NOTE: Uncomment this code in Chapter 9 */}
-
       <Card title="Collected" value={totalPaidInvoices} type="collected" />
       <Card title="Pending" value={totalPendingInvoices} type="pending" />
       <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
